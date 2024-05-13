@@ -11,7 +11,7 @@ class Participant {
   dispatchMessage(text) {
     // Він приймає один параметр - text - текст повідомлення, яке потрібно відправити.
     const formattedMessage = this.prepareMessage(text);
-    this.communicator.dispatchMessage(formattedMessage);
+    this.communicator.transmit(formattedMessage);
   }
 
   // Метод prepareMessage приймає text та повертає  `[${this.alias}]: ${text}`
